@@ -10,7 +10,7 @@
     <van-button color="#04cd95" plain wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" block>Get 新头像 清爽一夏~</van-button>
   </view>
   <view wx:else style="text-align: center;">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" bindtap="clickChangeAvatarImage"></image>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
     <view style="transform:rotate({{rotate}}deg); height:{{festivalSize}}px; width:{{festivalSize}}px; left:{{festivalLeft}}px; top:{{festivalTop}}px" class="userinfo-festivalview" catchtouchstart="festivalImageTouchStart" catchtouchmove="festivalImageTouchMove" catchtouchend="festivalImageTouchEnd">
       <view class="userinfo-festivalview-topline" />
       <view class="userinfo-festivalview-leftline" />
@@ -19,16 +19,17 @@
       <image class="userinfo-festivalimage" mode="aspectFit" src="{{festivalSrc}}" />
       <image class="userinfo-festivalrotate" mode="aspectFit" src="../images/icon_rotate.png" style="transform:rotate({{-rotate}}deg) scale({{1.0 / festivalScale}});" catchtouchstart="festivalImageRaoteTouchStart" catchtouchmove="festivalImageRaoteTouchMove" catchtouchend="festivalImageRaoteTouchEnd" />
     </view>
-    <van-divider contentPosition="center">操作栏</van-divider>
-    <van-row>
-      <van-col span="10" offset="3">
-        <van-button icon="passed" plain type="primary" round bindtap="clickMakeNewImage">保存下来</van-button>
-      </van-col>
-      <van-col span="10">
-        <van-button icon="replay" plain type="info" round bindtap="clickMakeResetImage">重来一次</van-button>
-      </van-col>
-    </van-row>
-    <van-divider contentPosition="center">选择素材</van-divider>
+        <view style="margin: 30rpx 0;">
+      <van-row>
+        <van-col span="10" offset="3">
+          <van-button icon="passed" plain type="primary" round bindtap="clickMakeNewImage">保存下来</van-button>
+        </van-col>
+        <van-col span="10">
+          <van-button icon="replay" plain type="info" round bindtap="clickMakeResetImage">重来一次</van-button>
+        </van-col>
+      </van-row>
+    </view>
+    <van-divider contentPosition="center">贴纸区</van-divider>
     <scroll-view class="material" scroll-y="true">
       <van-grid column-num="3">
         <van-grid-item use-slot wx:for="{{material}}" wx:key="key" data-index="{{item}}" bindtap="clickFestivalImage">

@@ -7,17 +7,17 @@
 
 .userinfo-canvas {
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 700px;
+  height: 700px;
   background: white;
-  visibility:hidden;
+  visibility: hidden;
   top: -1000px;
 }
 
 .userinfo-avatar {
-  margin-top: 30rpx;
-  width: 280px;
-  height: 280px;
+  width: 320px;
+  height: 320px;
+  border: 1rpx solid #ccc;
 }
 
 .material {

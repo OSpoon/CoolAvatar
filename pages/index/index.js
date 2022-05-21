@@ -11,6 +11,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUseGetUserProfile: false,
+    // 素材集合
     material: [{
       name: '1',
       url: '../images/material/1.png',
@@ -63,6 +64,26 @@ Page({
       name: '13',
       url: '../images/material/13.png',
       selected: false,
+    }, {
+      name: '14',
+      url: '../images/material/14.png',
+      selected: false,
+    }, {
+      name: '15',
+      url: '../images/material/15.png',
+      selected: false,
+    }, {
+      name: '16',
+      url: '../images/material/16.png',
+      selected: false,
+    }, {
+      name: '17',
+      url: '../images/material/17.png',
+      selected: false,
+    }, {
+      name: '18',
+      url: '../images/material/18.png',
+      selected: false,
     }],
     festivalSrc: '',
     isTouchScale: false,
@@ -113,6 +134,10 @@ Page({
     wx.getUserProfile({
       desc: '展示用户头像',
       success: (res) => {
+        const index = res.userInfo.avatarUrl.lastIndexOf('/132');
+        if (index != -1) {
+          res.userInfo.avatarUrl = res.userInfo.avatarUrl.substring(0, index) + '/0';
+        }
         const {
           material
         } = this.data;
@@ -144,13 +169,17 @@ Page({
         const {
           userInfo
         } = this.data;
+
         wx.downloadFile({
           url: userInfo.avatarUrl,
           success: (res) => {
+            console.log(res)
             saveImage(this.data, res.tempFilePath, {
               canvasid: 'festivalCanvas',
-              width: 280,
-              height: 280
+              width: 700,
+              height: 700,
+              offsetTop: 0,
+              offsetLeft: 0,
             }, (img) => {
               wx.hideLoading();
               if (img) {
@@ -223,35 +252,6 @@ Page({
         console.log(err)
       }
     })
-  },
-
-  /**
-   * 从相册、相机选择一张新照片
-   * @param {*} e 
-   */
-  clickChangeAvatarImage(e) {
-    wx.chooseMedia({
-      count: 1,
-      mediaType: ['image'],
-      sourceType: ['album', 'camera'],
-      sizeType: ['original', 'compressed'],
-      success: (res) => {
-        console.log(res)
-        const {
-          tempFiles,
-          type
-        } = res;
-        const {
-          userInfo
-        } = this.data;
-        if (type === 'image' && tempFiles.length > 0) {
-          userInfo.avatarUrl = tempFiles[0].tempFilePath;
-          this.setData({
-            userInfo,
-          });
-        }
-      }
-    });
   },
 
   /**

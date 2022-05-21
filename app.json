@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,7 +14,8 @@
   "tabBar": {
     "color": "#dbdbdb",
     "selectedColor": "#04cd95",
-    "list": [{
+    "list": [
+      {
         "selectedIconPath": "pages/images/icon-home-selected.png",
         "iconPath": "pages/images/icon-home-default.png",
         "pagePath": "pages/index/index",
@@ -38,7 +39,8 @@
     "van-image": "@vant/weapp/image/index",
     "van-cell": "@vant/weapp/cell/index",
     "van-cell-group": "@vant/weapp/cell-group/index",
-    "van-dialog": "@vant/weapp/dialog/index"
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
   },
   "lazyCodeLoading": "requiredComponents"
 }
