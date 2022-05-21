@@ -1,0 +1,18 @@
+/* pages/about.wxss */
+.about {
+  text-align: center;
+  padding: 80rpx 35rpx;
+}
+
+.content {
+  margin: 30rpx 0;
+}
+
+.author {
+  font-size: 28rpx;
+  position: absolute;
+  bottom: 5rpx;
+  width: 100%;
+  text-align: center;
+  color: gainsboro;
+}

@@ -1,0 +1,17 @@
+<!--pages/about.wxml-->
+<view>
+  <view class="about">
+    <van-image width="120" height="120" fit="cover" round src="http://vp.it200.cn/images/logo.b96656d2.jpg" />
+    <view class="van-multi-ellipsis--l3 content">
+      参加稀土掘金社区活动《初夏创意投稿大赛来袭！掘金伴你过初夏，更有Switch等好礼等你来拿！》
+    </view>
+  </view>
+  <van-cell-group>
+    <van-cell title="作者" value="小鑫同学" />
+    <van-cell title="反馈" value="1825203636@qq.com" />
+    <van-cell title="网站" value="it200.cn" />
+  </van-cell-group>
+  <view class="van-multi-ellipsis--l3 author">
+    Copyright © 小鑫同学
+  </view>
+</view>
