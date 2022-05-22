@@ -1,0 +1,6 @@
+/* templates/authorization/authorization.wxss */
+.get-user-info {
+  text-align: center;
+  padding: 30rpx 180rpx;
+  margin-top: 380rpx;
+}

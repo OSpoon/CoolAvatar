@@ -1,0 +1,4 @@
+/* pages/material-area.wxss */
+.material {
+  height: calc(100vh - 800rpx);
+}

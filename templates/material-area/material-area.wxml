@@ -1,0 +1,11 @@
+<!--pages/material-area.wxml-->
+<template name="materialArea">
+  <van-divider contentPosition="center">贴纸区</van-divider>
+  <scroll-view class="material" scroll-y="true">
+    <van-grid column-num="3">
+      <van-grid-item use-slot wx:for="{{material}}" wx:key="key" data-index="{{item}}" bindtap="clickFestivalImage">
+        <image style="width: 100%; height: 90px; background:{{item.selected ? '#eee' : '#fff'}}" src="{{item.url}}" mode="aspectFit" />
+      </van-grid-item>
+    </van-grid>
+  </scroll-view>
+</template>

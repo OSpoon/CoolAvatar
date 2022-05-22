@@ -1,0 +1,13 @@
+<!--pages/components/operating-area/operating-area.wxml-->
+<template name="operatingArea">
+  <view style="margin: 30rpx 0;">
+    <van-row>
+      <van-col span="10" offset="3">
+        <van-button icon="passed" plain type="primary" round bindtap="clickMakeNewImage">保存下来</van-button>
+      </van-col>
+      <van-col span="10">
+        <van-button icon="replay" plain type="info" round bindtap="clickMakeResetImage">重来一次</van-button>
+      </van-col>
+    </van-row>
+  </view>
+</template>

@@ -1,8 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/about/about",
-    "pages/logs/logs"
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,14 +15,14 @@
     "selectedColor": "#04cd95",
     "list": [
       {
-        "selectedIconPath": "pages/images/icon-home-selected.png",
-        "iconPath": "pages/images/icon-home-default.png",
+        "selectedIconPath": "images/icon-home-selected.png",
+        "iconPath": "images/icon-home-default.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "selectedIconPath": "pages/images/icon-about-selected.png",
-        "iconPath": "pages/images/icon-about-default.png",
+        "selectedIconPath": "images/icon-about-selected.png",
+        "iconPath": "images/icon-about-default.png",
         "pagePath": "pages/about/about",
         "text": "关于"
       }

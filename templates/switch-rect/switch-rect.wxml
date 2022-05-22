@@ -1,0 +1,11 @@
+<!--templates/switch-rect/switch-rect.wxml-->
+<template name="switchRect">
+  <view style="transform:rotate({{rotate}}deg); height:{{festivalSize}}px; width:{{festivalSize}}px; left:{{festivalLeft}}px; top:{{festivalTop}}px" class="userinfo-festivalview" catchtouchstart="festivalImageTouchStart" catchtouchmove="festivalImageTouchMove" catchtouchend="festivalImageTouchEnd">
+    <view class="userinfo-festivalview-topline" />
+    <view class="userinfo-festivalview-leftline" />
+    <view class="userinfo-festivalview-rightline" />
+    <view class="userinfo-festivalview-bottomline" />
+    <image class="userinfo-festivalimage" mode="aspectFit" src="{{festivalSrc}}" />
+    <image class="userinfo-festivalrotate" mode="aspectFit" src="../../images/icon_rotate.png" style="transform:rotate({{-rotate}}deg) scale({{1.0 / festivalScale}});" catchtouchstart="festivalImageRaoteTouchStart" catchtouchmove="festivalImageRaoteTouchMove" catchtouchend="festivalImageRaoteTouchEnd" />
+  </view>
+</template>

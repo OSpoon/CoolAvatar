@@ -14,75 +14,75 @@ Page({
     // 素材集合
     material: [{
       name: '1',
-      url: '../images/material/1.png',
+      url: '../../images/material/1.png',
       selected: false,
     }, {
       name: '2',
-      url: '../images/material/2.png',
+      url: '../../images/material/2.png',
       selected: false,
     }, {
       name: '3',
-      url: '../images/material/3.png',
+      url: '../../images/material/3.png',
       selected: false,
     }, {
       name: '4',
-      url: '../images/material/4.png',
+      url: '../../images/material/4.png',
       selected: false,
     }, {
       name: '5',
-      url: '../images/material/5.png',
+      url: '../../images/material/5.png',
       selected: false,
     }, {
       name: '6',
-      url: '../images/material/6.png',
+      url: '../../images/material/6.png',
       selected: false,
     }, {
       name: '7',
-      url: '../images/material/7.png',
+      url: '../../images/material/7.png',
       selected: false,
     }, {
       name: '8',
-      url: '../images/material/8.png',
+      url: '../../images/material/8.png',
       selected: false,
     }, {
       name: '9',
-      url: '../images/material/9.png',
+      url: '../../images/material/9.png',
       selected: false,
     }, {
       name: '10',
-      url: '../images/material/10.png',
+      url: '../../images/material/10.png',
       selected: false,
     }, {
-      name: '1',
-      url: '../images/material/11.png',
+      name: '11',
+      url: '../../images/material/11.png',
       selected: false,
     }, {
       name: '12',
-      url: '../images/material/12.png',
+      url: '../../images/material/12.png',
       selected: false,
     }, {
       name: '13',
-      url: '../images/material/13.png',
+      url: '../../images/material/13.png',
       selected: false,
     }, {
       name: '14',
-      url: '../images/material/14.png',
+      url: '../../images/material/14.png',
       selected: false,
     }, {
       name: '15',
-      url: '../images/material/15.png',
+      url: '../../images/material/15.png',
       selected: false,
     }, {
       name: '16',
-      url: '../images/material/16.png',
+      url: '../../images/material/16.png',
       selected: false,
     }, {
       name: '17',
-      url: '../images/material/17.png',
+      url: '../../images/material/17.png',
       selected: false,
     }, {
       name: '18',
-      url: '../images/material/18.png',
+      url: '../../images/material/18.png',
       selected: false,
     }],
     festivalSrc: '',

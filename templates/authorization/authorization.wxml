@@ -1,0 +1,7 @@
+<!--templates/authorization/authorization.wxml-->
+<template name="authorization">
+  <view class="get-user-info">
+    <van-image width="120" height="120" fit="cover" round src="https://wx.qlogo.cn/mmhead/Q3auHgzwzM6AnwHxKbKKgYaFPY4zAh9LIGn6m5DhQF2lCtRibukO5gg/0" />
+    <van-button color="#04cd95" plain wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" block>Get 新头像 清爽一夏~</van-button>
+  </view>
+</template>
